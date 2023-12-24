@@ -64,15 +64,6 @@ resource "cloudflare_record" "mta-sts" {
   value = var.mta_sts_value
 }
 
-# TODO: fix
-resource "cloudflare_record" "mta-sts-reports" {
-  zone_id = var.zone_id
-
-  type  = "TXT"
-  name  = "_smtp._tls"
-  value = "v=TLSRPTv1; rua=mailto:security@proculair.com;"
-}
-
 resource "cloudflare_record" "autodiscover" {
   zone_id = var.zone_id
 

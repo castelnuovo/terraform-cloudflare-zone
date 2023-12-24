@@ -47,20 +47,3 @@ resource "cloudflare_record" "dmarc" {
   type  = "TXT"
   value = "v=DMARC1; p=reject; adkim=s; aspf=s; rua=mailto:${var.dmarc_email};"
 }
-
-resource "cloudflare_record" "mta-sts" {
-  zone_id = var.zone_id
-
-  type  = "TXT"
-  name  = "_mta-sts"
-  value = var.mta_sts_value
-}
-
-# TODO: fix
-resource "cloudflare_record" "mta-sts-reports" {
-  zone_id = var.zone_id
-
-  type  = "TXT"
-  name  = "_smtp._tls"
-  value = "v=TLSRPTv1; rua=mailto:smtp-tls-reports@proculair.nl;"
-}

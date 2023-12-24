@@ -40,14 +40,3 @@ variable "dmarc_email" {
   # dmarc_email  = "XXXXXXXX@dmarc-reports.cloudflare.net"
   #
 }
-
-variable "mta_sts_value" {
-  description = "MTA-STS - record value"
-  type        = string
-
-  #
-  # Example:
-  #
-  # mta_sts_value  = "v=STSv1; id=20230101T000000;"
-  #
-}
