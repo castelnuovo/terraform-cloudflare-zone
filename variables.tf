@@ -34,10 +34,9 @@ variable "apple" {
   description = "(Optional) Apple Mail settings"
 
   type = object({
-    verification  = string
-    dkim_value    = string
-    dmarc_email   = string
-    mta_sts_value = string
+    verification = string
+    dkim_value   = string
+    dmarc_email  = string
   })
 
   #
@@ -47,7 +46,6 @@ variable "apple" {
   #   verification  = "apple-domain=XXXXXXXX"
   #   dkim_value    = "sig1.dkim.example.com.at.icloudmailadmin.com"
   #   dmarc_email   = "XXXXXXXX@dmarc-reports.cloudflare.net"
-  #   mta_sts_value = "v=STSv1; id=20230101T000000;"
   # }
   #
 

@@ -44,10 +44,9 @@ module "apple" {
 
   zone_id = cloudflare_zone.this.id
 
-  verification  = var.apple.verification
-  dkim_value    = var.apple.dkim_value
-  dmarc_email   = var.apple.dmarc_email
-  mta_sts_value = var.apple.mta_sts_value
+  verification = var.apple.verification
+  dkim_value   = var.apple.dkim_value
+  dmarc_email  = var.apple.dmarc_email
 }
 
 module "google" {
