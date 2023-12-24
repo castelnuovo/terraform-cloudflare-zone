@@ -1,0 +1,22 @@
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "P3 - Low"
+      - "T4 - Dependabot"
+    reviewers:
+      - "castelnuovo/developers"
+
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "P3 - Low"
+      - "T4 - Dependabot"
+    reviewers:
+      - "castelnuovo/developers"
