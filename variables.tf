@@ -49,7 +49,7 @@ variable "apple" {
   # }
   #
 
-  default = {}
+  default = null
 }
 
 variable "google" {
@@ -73,7 +73,7 @@ variable "google" {
   # }
   #
 
-  default = {}
+  default = null
 }
 
 
@@ -96,7 +96,7 @@ variable "microsoft" {
   # }
   #
 
-  default = {}
+  default = null
 }
 
 variable "postmark" {
@@ -122,5 +122,5 @@ variable "postmark" {
   # }
   #
 
-  default = {}
+  default = null
 }

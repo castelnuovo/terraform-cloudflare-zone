@@ -40,7 +40,7 @@ resource "cloudflare_zone_dnssec" "this" {
 
 module "apple" {
   source = "./modules/apple"
-  count  = length(var.apple) > 0 ? 1 : 0
+  count  = var.apple == null ? 0 : 1
 
   zone_id = cloudflare_zone.this.id
 
@@ -51,7 +51,7 @@ module "apple" {
 
 module "google" {
   source = "./modules/google"
-  count  = length(var.google) > 0 ? 1 : 0
+  count  = var.google == null ? 0 : 1
 
   zone_id = cloudflare_zone.this.id
 
@@ -64,7 +64,7 @@ module "google" {
 
 module "microsoft" {
   source = "./modules/microsoft"
-  count  = length(var.microsoft) > 0 ? 1 : 0
+  count  = var.microsoft == null ? 0 : 1
 
   zone_id = cloudflare_zone.this.id
 
@@ -75,7 +75,7 @@ module "microsoft" {
 
 module "postmark" {
   source = "./modules/postmark"
-  count  = length(var.postmark) > 0 ? 1 : 0
+  count  = var.postmark == null ? 0 : 1
 
   zone_id = cloudflare_zone.this.id
 
