@@ -11,7 +11,7 @@
 ```terraform
 module "castelnuovo_dev" {
   source  = "castelnuovo/zone/cloudflare"
-  version = "~> 0.1.0"
+  version = "~> 0.1.1"
 
   account_id = "XXXXXXX"
   domain     = "domain.tld"
