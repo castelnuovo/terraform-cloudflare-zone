@@ -6,13 +6,6 @@
   castelnuovo/terraform-cloudflare-zone
 </h1>
 
-### Local Installation
-
-```sh
-# Clone repository
-git clone https://github.com/castelnuovo/terraform-cloudflare-zone && cd terraform-cloudflare-zone
-```
-
 ### Usage
 
 ```terraform
