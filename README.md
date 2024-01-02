@@ -23,3 +23,24 @@ module "castelnuovo_dev" {
   }
 }
 ```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Security Vulnerabilities
+
+Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+
+## Credits
+
+- [Luca Castelnuovo](https://github.com/lucacastelnuovo)
+- [All Contributors](../../contributors)
+
+## License
+
+The Apache License. Please see [License File](LICENSE.md) for more information.
